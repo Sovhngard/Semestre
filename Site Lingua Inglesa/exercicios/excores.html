@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="exanimais.css" rel="stylesheet">
+    <title>Exercicio Cores</title>
+  </head>
+  <body>
+    <main class="mano">
+        <div class="animais">
+            <h1><a href="../animais/animais.html" id="ani">Animais</a></h1>
+        </div>
+        <div class="cores">
+          <h1><a href="../cores/cores.html" id="cor">Cores</a></h1>
+        </div>
+        <div class="numeros">
+            <h1><a href="../numeros/numeros.html" id="num">Números</a></h1>
+        </div>
+        <div class="familia">
+            <h1><a href="../familia/familia.html" id="fam">Família</a></h1>
+        </div>
+        <div class="exercicios">
+            <h1><a href="../exercicios/exercicios.html" id="ex">Exercícios</a></h1>
+        </div>
+    </main>
+<body>
+    <video controls>
+        <source src="videos/cor.mp4" type="video/mp4">
+    </video>
+    <div class="question">
+        Quais são as cores, em ordem, que aparecem no vídeo?
+    </div>
+    <div class="options">
+        <button class="option" onclick="checkAnswer('cores', 'amarelo, azul, roxo, vermelho, laranja, verde')">Amarelo, Azul, Roxo, Vermelho, Laranja, Verde</button>
+        <button class="option" onclick="checkAnswer('cores', 'azul, verde, amarelo, laranja, roxo, vermelho')">Azul, Verde, Amarelo, Laranja, Roxo, Vermelho</button>
+        <button class="option" onclick="checkAnswer('cores', 'verde, laranja, roxo, vermelho, amarelo, azul')">Verde, Laranja, Roxo, Vermelho, Amarelo, Azul</button>
+        <button class="option" onclick="checkAnswer('cores', 'azul, vermelho, verde, amarelo, laranja, roxo')">Azul, Vermelho, Verde, Amarelo, Laranja, Roxo</button>
+    </div>
+    <div class="proximo">
+        <h1 id="next"><a href="exfamilia.html">Próximo exercício</a></h1>
+    </div>
+    <div id="feedback"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<script>
+    function checkAnswer(video, userAnswer) {
+        const feedbackDiv = document.getElementById('feedback');
+        let correctAnswer;
+    
+        switch(video) {
+        case 'animais':
+            correctAnswer = 'vaca, cavalo, porco';
+            break;
+        case 'cores':
+            correctAnswer = 'azul, vermelho, verde, amarelo, laranja, roxo'; 
+            break;
+        case 'familia':
+            correctAnswer = 'irmão, irmã, mãe, pai, tio, avô'; 
+            break;
+        case 'numeros':
+            correctAnswer = 'Number'; 
+            break;
+    }
+    
+        if (userAnswer === correctAnswer) {
+            feedbackDiv.textContent = 'Resposta Correta!';
+            feedbackDiv.style.color = 'green';
+        } else {
+            feedbackDiv.textContent = 'Resposta Incorreta. Tente novamente.';
+            feedbackDiv.style.color = 'red';
+        }
+    }
+    </script>

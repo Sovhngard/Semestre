@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="familia.css" rel="stylesheet">
+    <title>English Class</title>
+  </head>
+  <body>
+    <main class="mano">
+        <div class="animais">
+            <h1><a href="../animais/animais.html" id="ani">Animais</a></h1>
+        </div>
+        <div class="cores">
+          <h1><a href="../cores/cores.html" id="cor">Cores</a></h1>
+        </div>
+        <div class="numeros">
+            <h1><a href="../numeros/numeros.html" id="num">Números</a></h1>
+        </div>
+        <div class="familia">
+            <h1><a href="../familia/familia.html" id="fam">Família</a></h1>
+        </div>
+        <div class="exercicios">
+            <h1><a href="../exercicios/exercicios.html" id="ex">Exercícios</a></h1>
+        </div>
+    </main>
+    <main class="familia1">
+      <div class="container1">
+        <div class="item">
+          <img src="imagens/mom.png" alt="Mãe">
+          <button onmousedown="sound1.play()" onclick="toggleText(this)">Mãe</button>
+        </div>
+        <div class="item">
+          <img src="imagens/dad.png" alt="Pai">
+          <button onmousedown="sound2.play()" onclick="toggleText(this)">Pai</button>
+        </div>
+        <div class="item">
+          <img src="imagens/unc.png" alt="Tio">
+          <button onmousedown="sound3.play()" onclick="toggleText(this)">Tio</button>
+      </div>
+      </div>
+      <div class="container2">
+        <div class="item">
+          <img src="imagens/aunt.png" alt="Tia">
+          <button onmousedown="sound4.play()" onclick="toggleText(this)">Tia</button>
+      </div>
+        <div class="item">
+          <img src="imagens/bro.png" alt="Irmão">
+          <button onmousedown="sound5.play()" onclick="toggleText(this)">Irmão</button>
+        </div>
+        <div class="item">
+          <img src="imagens/sis.png" alt="Irmã">
+          <button onmousedown="sound6.play()" onclick="toggleText(this)">Irmã</button>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="item">
+          <img src="imagens/cous.png" alt="Primo">
+          <button onmousedown="sound7.play()" onclick="toggleText(this)">Primo</button>
+        </div>
+        <div class="item">
+          <img src="imagens/gramps.png" alt="Avô">
+          <button onmousedown="sound8.play()" onclick="toggleText(this)">Avô</button>
+        </div>
+        <div class="item">
+          <img src="imagens/granny.png" alt="Avó">
+          <button onmousedown="sound9.play()" onclick="toggleText(this)">Avó</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      function toggleText(button) {
+        if (button.innerHTML === "Mãe") {
+          button.innerHTML = "Mother";
+        } else if (button.innerHTML === "Mother") {
+          button.innerHTML = "Mãe";
+        }
+        else if (button.innerHTML === "Pai") {
+          button.innerHTML = "Father";
+        } else if (button.innerHTML === "Father") {
+          button.innerHTML = "Pai";
+        }
+        else if (button.innerHTML === "Tio") {
+          button.innerHTML = "Uncle";
+        } else if (button.innerHTML === "Uncle") {
+          button.innerHTML = "Tio";
+        }
+        else if (button.innerHTML === "Tia") {
+          button.innerHTML = "Aunt";
+        } else if (button.innerHTML === "Aunt") {
+          button.innerHTML = "Tia";
+        }
+        else if (button.innerHTML === "Irmão") {
+          button.innerHTML = "Brother";
+        } else if (button.innerHTML === "Brother") {
+          button.innerHTML = "Irmão";
+        }
+        else if (button.innerHTML === "Irmã") {
+          button.innerHTML = "Sister";
+        } else if (button.innerHTML === "Sister") {
+          button.innerHTML = "Irmã";
+        }
+        else if (button.innerHTML === "Primo") {
+          button.innerHTML = "Cousin";
+        } else if (button.innerHTML === "Cousin") {
+          button.innerHTML = "Primo";
+        }
+        else if (button.innerHTML === "Avô") {
+          button.innerHTML = "Grandfather";
+        } else if (button.innerHTML === "Grandfather") {
+          button.innerHTML = "Avô";
+        }
+        else if (button.innerHTML === "Avó") {
+          button.innerHTML = "Grandmother";
+        } else if (button.innerHTML === "Grandmother") {
+          button.innerHTML = "Avó";
+        }
+        }
+
+      var sound1 = new Audio();
+      sound1.src = "sons/mother.mp3";
+
+      var sound2 = new Audio();
+      sound2.src = "sons/father.mp3";
+
+      var sound3 = new Audio();
+      sound3.src = "sons/uncle.mp3";
+
+      var sound4 = new Audio();
+      sound4.src = "sons/aunt.mp3"
+
+      var sound5 = new Audio();
+      sound5.src = "sons/brother.mp3";
+
+      var sound6 = new Audio();
+      sound6.src = "sons/sister.mp3";
+
+      var sound7 = new Audio();
+      sound7.src = "sons/cousin.mp3";
+
+      var sound8 = new Audio();
+      sound8.src = "sons/grandfather.mp3";
+
+      var sound9 = new Audio();
+      sound9.src = "sons/grandmother.mp3";
+    </script>   
+  </body>
+</html>

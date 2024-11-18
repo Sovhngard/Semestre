@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="cores.css" rel="stylesheet">
+    <title>English Class</title>
+  </head>
+  <body>
+    <main class="mano">
+        <div class="animais">
+            <h1><a href="../animais/animais.html" id="ani">Animais</a></h1>
+        </div>
+        <div class="cores">
+            <h1><a href="#" id="cor">Cores</a></h1>
+        </div>
+        <div class="numeros">
+            <h1><a href="../numeros/numeros.html" id="num">Números</a></h1>
+        </div>
+        <div class="familia">
+            <h1><a href="../familia/familia.html" id="fam">Família</a></h1>
+        </div>
+        <div class="exercicios">
+            <h1><a href="../exercicios/exercicios.html" id="ex">Exercícios</a></h1>
+        </div>
+    </main>
+    <main class="animais1">
+      <div class="container1">
+        <div class="item">
+            <img src="imagens/red.png" alt="Vermelho">
+          <button onmousedown="sound1.play()" onclick="toggleText(this)">Vermelho</button>
+        </div>
+        <div class="item">
+          <img src="imagens/orange.jpeg" alt="Laranja">
+          <button onmousedown="sound2.play()" onclick="toggleText(this)">Laranja</button>
+        </div>
+        <div class="item">
+          <img src="imagens/yellow.jpg" alt="Amarelo">
+          <button onmousedown="sound3.play()" onclick="toggleText(this)">Amarelo</button>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="item">
+          <img src="imagens/green.png" alt="Verde">
+          <button onmousedown="sound4.play()" onclick="toggleText(this)">Verde</button>
+        </div>
+        <div class="item">
+          <img src="imagens/blue.png" alt="Azul">
+          <button onmousedown="sound5.play()" onclick="toggleText(this)">Azul</button>
+        </div>
+        <div class="item">
+          <img src="imagens/purple.jpg" alt="Roxo">
+          <button onmousedown="sound6.play()" onclick="toggleText(this)">Roxo</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      function toggleText(button) {
+        if (button.innerHTML === "Vermelho") {
+          button.innerHTML = "Red";
+        } else if (button.innerHTML === "Red") {
+          button.innerHTML = "Vermelho";
+        }
+        else if (button.innerHTML === "Laranja") {
+          button.innerHTML = "Orange";
+        } else if (button.innerHTML === "Orange") {
+          button.innerHTML = "Laranja";
+        }
+        else if (button.innerHTML === "Amarelo") {
+          button.innerHTML = "Yellow";
+        } else if (button.innerHTML === "Yellow") {
+          button.innerHTML = "Amarelo";
+        }
+        else if (button.innerHTML === "Verde") {
+          button.innerHTML = "Green";
+        } else if (button.innerHTML === "Green") {
+          button.innerHTML = "Verde";
+        }
+        else if (button.innerHTML === "Azul") {
+          button.innerHTML = "Blue";
+        } else if (button.innerHTML === "Blue") {
+          button.innerHTML = "Azul";
+        }
+        else if (button.innerHTML === "Roxo") {
+          button.innerHTML = "Purple";
+        } else if (button.innerHTML === "Purple") {
+          button.innerHTML = "Roxo";
+        }
+      }
+
+      var sound1 = new Audio();
+      sound1.src = "sons/red.mp3";
+
+      var sound2 = new Audio();
+      sound2.src = "sons/orange.mp3";
+
+      var sound3 = new Audio();
+      sound3.src = "sons/yellow.mp3";
+
+      var sound4 = new Audio();
+      sound4.src = "sons/green.mp3";
+
+      var sound5 = new Audio();
+      sound5.src = "sons/blue.mp3";
+
+      var sound6 = new Audio();
+      sound6.src = "sons/purple.mp3";
+
+    </script>   
+  </body>
+</html>

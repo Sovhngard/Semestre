@@ -1,0 +1,125 @@
+/* Reset básico para consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+.esc {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#esc1 {
+  font-size: 24px;
+  color: #555;
+}
+
+/* Estilo da seção principal de categorias */
+.mano {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.mano div {
+  width: 280px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.mano div a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo para cada seção com imagens de fundo */
+.animais {
+  background-image: url('mimos/porquin.png');
+}
+
+.cores {
+  background-image: url('mimos/arco-iris.jpg');
+}
+
+.numeros {
+  background-image: url('mimos/numinho.jpg');
+}
+
+.familia {
+  background-image: url('mimos/fam.png');
+}
+
+.exercicios {
+  background-image: url('mimos/kids.png');
+}
+
+/* Efeito de hover para as seções */
+.mano div:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+/* Estilo para a seção de botões com imagens */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 150px;
+}
+
+.button-container img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #357ab8;
+  transform: scale(1.05);
+}

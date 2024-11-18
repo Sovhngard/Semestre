@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="animais.css" rel="stylesheet">
+    <title>English Class</title>
+  </head>
+  <body>
+    <main class="mano">
+      <div class="animais">
+          <h1><a href="../animais/animais.html" id="ani">Animais</a></h1>
+      </div>
+      <div class="cores">
+          <h1><a href="../cores/cores.html" id="cor">Cores</a></h1>
+      </div>
+      <div class="numeros">
+          <h1><a href="../numeros/numeros.html" id="num">Números</a></h1>
+      </div>
+      <div class="familia">
+          <h1><a href="../familia/familia.html" id="fam">Família</a></h1>
+      </div>
+      <div class="exercicios">
+          <h1><a href="../exercicios/exercicios.html" id="ex">Exercícios</a></h1>
+      </div>
+  </main>
+    <main class="animais1">
+      <div class="container1">
+        <div class="item">
+          <img src="imagens/galinha.png" alt="Galinha">
+          <button onmousedown="sound1.play()" onclick="toggleText(this)">Galinha</button>
+        </div>
+        <div class="item">
+          <img src="imagens/porco.png" alt="Porco">
+          <button onmousedown="sound2.play()" onclick="toggleText(this)">Porco</button>
+        </div>
+        <div class="item">
+          <img src="imagens/vaca.png" alt="Vaca">
+          <button onmousedown="sound3.play()" onclick="toggleText(this)">Vaca</button>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="item">
+          <img src="imagens/cavalo.png" alt="Cavalo">
+          <button onmousedown="sound4.play()" onclick="toggleText(this)">Cavalo</button>
+        </div>
+        <div class="item">
+          <img src="imagens/cachorro.png" alt="Cachorro">
+          <button onmousedown="sound5.play()" onclick="toggleText(this)">Cachorro</button>
+        </div>
+        <div class="item">
+          <img src="imagens/gato.png" alt="Gato">
+          <button onmousedown="sound6.play()" onclick="toggleText(this)">Gato</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      function toggleText(button) {
+        if (button.innerHTML === "Galinha") {
+          button.innerHTML = "Chicken";
+        } else if (button.innerHTML === "Chicken") {
+          button.innerHTML = "Galinha";
+        }
+        else if (button.innerHTML === "Porco") {
+          button.innerHTML = "Pig";
+        } else if (button.innerHTML === "Pig") {
+          button.innerHTML = "Porco";
+        }
+        else if (button.innerHTML === "Vaca") {
+          button.innerHTML = "Cow";
+        } else if (button.innerHTML === "Cow") {
+          button.innerHTML = "Vaca";
+        }
+        else if (button.innerHTML === "Cavalo") {
+          button.innerHTML = "Horse";
+        } else if (button.innerHTML === "Horse") {
+          button.innerHTML = "Cavalo";
+        }
+        else if (button.innerHTML === "Cachorro") {
+          button.innerHTML = "Dog";
+        } else if (button.innerHTML === "Dog") {
+          button.innerHTML = "Cachorro";
+        }
+        else if (button.innerHTML === "Gato") {
+          button.innerHTML = "Cat";
+        } else if (button.innerHTML === "Cat") {
+          button.innerHTML = "Gato";
+        }
+      }
+
+      var sound1 = new Audio();
+      sound1.src = "sons/chicken.mp3";
+
+      var sound2 = new Audio();
+      sound2.src = "sons/pig.mp3";
+
+      var sound3 = new Audio();
+      sound3.src = "sons/cow.mp3";
+
+      var sound4 = new Audio();
+      sound4.src = "sons/horse.mp3"
+
+      var sound5 = new Audio();
+      sound5.src = "sons/dog.mp3";
+
+      var sound6 = new Audio();
+      sound6.src = "sons/cat.mp3";
+
+    </script>   
+  </body>
+</html>

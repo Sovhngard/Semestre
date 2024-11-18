@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="numeros.css" rel="stylesheet">
+    <title>English Class</title>
+  </head>
+  <body>
+    <main class="mano">
+        <div class="animais">
+            <h1><a href="../animais/animais.html" id="ani">Animais</a></h1>
+        </div>
+        <div class="cores">
+          <h1><a href="../cores/cores.html" id="cor">Cores</a></h1>
+        </div>
+        <div class="numeros">
+            <h1><a href="../numeros/numeros.html" id="num">Números</a></h1>
+        </div>
+        <div class="familia">
+            <h1><a href="../familia/familia.html" id="fam">Família</a></h1>
+        </div>
+        <div class="exercicios">
+            <h1><a href="../exercicios/exercicios.html" id="ex">Exercícios</a></h1>
+        </div>
+    </main>
+    <main class="numeros1">
+      <div class="container1">
+        <div class="item">
+          <img src="imagens/0.png" alt="Zero">
+          <button onmousedown="sound1.play()" onclick="toggleText(this)">Zero</button>
+        </div>
+        <div class="item">
+          <img src="imagens/1.png" alt="Um">
+          <button onmousedown="sound2.play()" onclick="toggleText(this)">Um</button>
+        </div>
+        <div class="item">
+          <img src="imagens/2.png" alt="Dois">
+          <button onmousedown="sound3.play()" onclick="toggleText(this)">Dois</button>
+      </div>
+        <div class="item">
+          <img src="imagens/3.png" alt="Tres">
+          <button onmousedown="sound4.play()" onclick="toggleText(this)">Tres</button>
+      </div>
+        </div>
+        <div class="container2">
+        <div class="item">
+          <img src="imagens/4.png" alt="Quatro">
+          <button onmousedown="sound5.play()" onclick="toggleText(this)">Quatro</button>
+        </div>
+        <div class="item">
+          <img src="imagens/5.png" alt="Cinco">
+          <button onmousedown="sound6.play()" onclick="toggleText(this)">Cinco</button>
+        </div>
+        <div class="item">
+          <img src="imagens/6.png" alt="Seis">
+          <button onmousedown="sound7.play()" onclick="toggleText(this)">Seis</button>
+        </div>
+        <div class="item">
+          <img src="imagens/7.png" alt="Sete">
+          <button onmousedown="sound8.play()" onclick="toggleText(this)">Sete</button>
+        </div>
+        <div class="container3">
+        <div class="item">
+          <img src="imagens/8.png" alt="Oito">
+          <button onmousedown="sound9.play()" onclick="toggleText(this)">Oito</button>
+        </div>
+        <div class="item">
+          <img src="imagens/9.png" alt="Nove">
+          <button onmousedown="sound10.play()" onclick="toggleText(this)">Nove</button>
+        </div>
+        <div class="item">
+          <img src="imagens/10.png" alt="Dez">
+          <button onmousedown="sound11.play()" onclick="toggleText(this)">Dez</button>
+        </div>
+        <div class="item">
+          <img src="imagens/num.png" alt="Numero">
+          <button onmousedown="sound12.play()" onclick="toggleText(this)">Numero</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      function toggleText(button) {
+        if (button.innerHTML === "Zero") {
+          button.innerHTML = "Zero";
+        } else if (button.innerHTML === "Zero") {
+          button.innerHTML = "Zero";
+        }
+        else if (button.innerHTML === "Um") {
+          button.innerHTML = "One";
+        } else if (button.innerHTML === "One") {
+          button.innerHTML = "Um";
+        }
+        else if (button.innerHTML === "Dois") {
+          button.innerHTML = "Two";
+        } else if (button.innerHTML === "Two") {
+          button.innerHTML = "Dois";
+        }
+        else if (button.innerHTML === "Tres") {
+          button.innerHTML = "Three";
+        } else if (button.innerHTML === "Three") {
+          button.innerHTML = "Tres";
+        }
+        else if (button.innerHTML === "Quatro") {
+          button.innerHTML = "Four";
+        } else if (button.innerHTML === "Four") {
+          button.innerHTML = "Quatro";
+        }
+        else if (button.innerHTML === "Cinco") {
+          button.innerHTML = "Five";
+        } else if (button.innerHTML === "Five") {
+          button.innerHTML = "Cinco";
+        }
+        else if (button.innerHTML === "Seis") {
+          button.innerHTML = "Six";
+        } else if (button.innerHTML === "Six") {
+          button.innerHTML = "Seis";
+        }
+        else if (button.innerHTML === "Sete") {
+          button.innerHTML = "Seven";
+        } else if (button.innerHTML === "Seven") {
+          button.innerHTML = "Sete";
+        }
+        else if (button.innerHTML === "Oito") {
+          button.innerHTML = "Eight";
+        } else if (button.innerHTML === "Eight") {
+          button.innerHTML = "Oito";
+        }
+        else if (button.innerHTML === "Nove") {
+          button.innerHTML = "Nine";
+        } else if (button.innerHTML === "Nine") {
+          button.innerHTML = "Nove";
+        }
+        else if (button.innerHTML === "Dez") {
+          button.innerHTML = "Ten";
+        } else if (button.innerHTML === "Ten") {
+          button.innerHTML = "Dez";
+        }
+        else if (button.innerHTML === "Numero") {
+          button.innerHTML = "Number";
+        } else if (button.innerHTML === "Number") {
+          button.innerHTML = "Numero";
+        }
+      }
+
+      var sound1 = new Audio();
+      sound1.src = "sons/zero.mp3";
+
+      var sound2 = new Audio();
+      sound2.src = "sons/one.mp3";
+
+      var sound3 = new Audio();
+      sound3.src = "sons/two.mp3";
+
+      var sound4 = new Audio();
+      sound4.src = "sons/three.mp3"
+
+      var sound5 = new Audio();
+      sound5.src = "sons/four.mp3";
+
+      var sound6 = new Audio();
+      sound6.src = "sons/five.mp3";
+
+      var sound7 = new Audio();
+      sound7.src = "sons/six.mp3";
+
+      var sound8 = new Audio();
+      sound8.src = "sons/seven.mp3";
+
+      var sound9 = new Audio();
+      sound9.src = "sons/eight.mp3";
+
+      var sound10 = new Audio();
+      sound10.src = "sons/nine.mp3";
+
+      var sound11= new Audio();
+      sound11.src = "sons/ten.mp3";
+
+      var sound12 = new Audio();
+      sound12.src = "sons/num.mp3";
+
+    </script>   
+  </body>
+</html>

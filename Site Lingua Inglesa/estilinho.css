@@ -1,0 +1,69 @@
+.animais #ani{
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.cores #cor{
+    text-decoration: none;
+    padding-top: 80px;
+    font-size: 40px;
+}
+
+.numeros #num{
+    text-decoration: none;
+    padding-top: 80px;
+    font-size: 40px;
+}
+
+.familia #fam{
+    text-decoration: none;
+    padding-top: 80px;
+    font-size: 40px;
+}
+
+.exercicios #ex{
+    text-decoration: none;
+    padding-top: 250px;
+    font-size: 40px;
+}
+
+.mano {
+    width: 230px;
+    height: 910px;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .mano a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+  }
+  
+  .mano a:hover {
+    color: #064579;
+  }
+  
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .mano {padding-top: 15px;}
+    .mano a {font-size: 18px;}
+  }
+
+.esc #esc1{
+    padding-left: 450px;
+    padding-top: 350px;
+    font-size: 80px;
+}

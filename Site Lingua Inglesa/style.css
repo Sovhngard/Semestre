@@ -1,0 +1,113 @@
+/* Reset básico para consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.top #frase{
+  padding-left: 20px;
+  padding-bottom: 150px;
+  font-size: 80px;
+}
+
+/* Estilo do cabeçalho */
+.esc {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#esc1 {
+  padding-top: 120px;
+  font-size: 44px;
+  color: #555;
+}
+
+
+/* Estilo da seção principal */
+.mano {
+  display: flex; /* Alinha os elementos lado a lado */
+  gap: 30px; /* Espaçamento entre os elementos */
+}
+
+.mano div {
+  width: 280px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Exemplo de imagens específicas para cada seção */
+
+.animais #ani{
+  text-decoration: none;
+}
+
+.cores #cor{
+  text-decoration: none;
+}
+
+.numeros #num{
+  text-decoration: none;
+}
+
+.familia #fam{
+  text-decoration: none;
+}
+
+.exercicios #ex{
+  text-decoration: none;
+}
+
+.animais {
+  background-image: url('mimos/porquin.png'); /* substitua pelo caminho da imagem */
+}
+
+.cores {
+  background-image: url('mimos/arco-iris.jpg');
+}
+
+.numeros {
+  background-image: url('mimos/numinho.jpg');
+}
+
+.familia {
+  background-image: url('mimos/fam.png');
+}
+
+.exercicios {
+  background-image: url('mimos/kids.png');
+}
+
+.mano div a {
+  color: #fff; /* Define a cor do texto do link para branco */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Efeito de hover para os botões */
+.mano div:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}

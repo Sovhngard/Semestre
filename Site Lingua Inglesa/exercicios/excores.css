@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Navegação principal */
+.mano {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.mano div {
+  background-color: #4a90e2;
+  width: 180px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mano div:hover {
+  background-color: #357ab8;
+  transform: scale(1.05);
+}
+
+.mano h1 {
+  font-size: 18px;
+}
+
+.mano a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilo do vídeo */
+video {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Pergunta */
+.question {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #444;
+}
+
+/* Opções de resposta */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.option {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.option:hover {
+  background-color: #357ab8;
+  transform: scale(1.05);
+}
+
+.option:active {
+  background-color: #285d85;
+}
+
+/* Feedback */
+#feedback {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Próximo exercício */
+.proximo {
+  margin-top: 30px;
+}
+
+.proximo h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+.proximo a {
+  color: #4a90e2;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.proximo a:hover {
+  border-bottom: 2px solid #357ab8;
+}
